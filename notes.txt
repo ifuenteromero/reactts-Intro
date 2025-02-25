@@ -1,0 +1,14 @@
+Typescript = Javascript + a type system
+
+The TS Type System 
+-   Help us catch errors during development
+-   Uses 'type annotations' to analyze our code
+-   Only active during development
+-   Doesn't provide any performance optimization
+
+SUMMARY
+Writing Typescript is the same as writing Javascript with some "extra documentation".
+Typescript has no effect on how our code gets executed by the browser or Node.
+It is best to think of Typescript as being like a friend sitting behind you while you are coding.
+
+
