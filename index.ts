@@ -3,7 +3,13 @@ import axios from "axios";
 const endpoint = "https://jsonplaceholder.typicode.com/todos/1";
 
 axios.get(endpoint).then((response) => {
-  console.log({ response: response.data });
+  const todo = response.data;
+  const ID = todo.ID;
+  const title = todo.Title;
+  const finished = todo.Finished;
+  console.log(
+    `The Todo with ID: ${ID} has a title of: ${title} and is finished: ${finished}`
+  );
 });
 
 // tsc index.ts
