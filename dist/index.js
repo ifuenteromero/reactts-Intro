@@ -2,10 +2,10 @@ import axios from 'axios';
 const endpoint = 'https://jsonplaceholder.typicode.com/todos/1';
 axios.get(endpoint).then(response => {
     const todo = response.data;
-    const ID = todo.ID;
-    const title = todo.Title;
-    const finished = todo.Finished;
-    console.log(`The Todo with ID: ${ID} has a title of: ${title} and is finished: ${finished}`);
+    const id = todo.id;
+    const title = todo.title;
+    const completed = todo.completed;
+    console.log(`The Todo with ID: ${id} has a title of: ${title} and is finished: ${completed}`);
 });
 // tsc index.ts
 // node index.js

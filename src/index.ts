@@ -9,12 +9,12 @@ interface Todo {
 }
 
 axios.get(endpoint).then(response => {
-	const todo = response.data;
-	const ID = todo.ID;
-	const title = todo.Title;
-	const finished = todo.Finished;
+	const todo = response.data as Todo;
+	const id = todo.id;
+	const title = todo.title;
+	const completed = todo.completed;
 	console.log(
-		`The Todo with ID: ${ID} has a title of: ${title} and is finished: ${finished}`
+		`The Todo with ID: ${id} has a title of: ${title} and is finished: ${completed}`
 	);
 });
 
