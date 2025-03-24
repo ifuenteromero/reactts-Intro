@@ -45,3 +45,21 @@ const logWeather2 = ({ date, weather }: { date: Date; weather: string }) => {
 	console.log({ date });
 	console.log({ weather });
 };
+
+const profile = {
+	name: 'Irene',
+	age: 41,
+	coords: {
+		lat: 0,
+		lng: 20,
+	},
+	setAge(age: number) {
+		this.age = age;
+	},
+};
+
+const { age }: { age: number } = profile;
+
+const {
+	coords: { lat, lng },
+}: { coords: { lat: number; lng: number } } = profile;
