@@ -28,3 +28,20 @@ const throwError2 = (message: string): string => {
 
 	return message;
 };
+
+const todaysWeather = {
+	date: new Date(),
+	weather: 'sunny',
+};
+
+const logWeather = (forecast: { date: Date; weather: string }) => {
+	console.log({ date: forecast.date });
+	console.log({ weather: forecast.weather });
+};
+
+logWeather(todaysWeather);
+
+const logWeather2 = ({ date, weather }: { date: Date; weather: string }) => {
+	console.log({ date });
+	console.log({ weather });
+};
