@@ -5,8 +5,13 @@ axios.get(endpoint).then(response => {
     const id = todo.id;
     const title = todo.title;
     const completed = todo.completed;
-    console.log(`The Todo with ID: ${id} has a title of: ${title} and is finished: ${completed}`);
+    logTodo(id, title, completed);
 });
+const logTodo = (id, title, completed) => {
+    console.log(`The Todo with ID: ${id} 
+		has a title of: ${title} 
+		and is finished: ${completed}`);
+};
 // tsc index.ts
 // node index.js
 // npx tsx index.ts para ejecutarlo en un solo paso
