@@ -6,12 +6,7 @@ const oldCivic = {
         return `Name: ${this.name}`;
     },
 };
-const printVehicle = (vehicle) => {
-    console.log({
-        name: vehicle.name,
-        year: vehicle.year,
-        broken: vehicle.broken,
-    });
-    console.log(vehicle.summary());
+const printVehicle = (item) => {
+    console.log(item.summary());
 };
 printVehicle(oldCivic);
