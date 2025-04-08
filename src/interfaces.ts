@@ -11,8 +11,19 @@ const oldCivic = {
 	},
 };
 
-const printVehicle = (item: Reportable): void => {
+const printSummary = (item: Reportable): void => {
 	console.log(item.summary());
 };
 
-printVehicle(oldCivic);
+const drink2 = {
+	color: 'brown',
+	carbonated: true,
+	broken: true,
+	sugar: 40,
+	summary(): string {
+		return `My drink has ${this.sugar} grams of sugar`;
+	},
+};
+
+printSummary(oldCivic);
+printSummary(drink2);
